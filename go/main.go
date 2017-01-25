@@ -33,7 +33,7 @@ func enableCORS(fn http.HandlerFunc) http.HandlerFunc {
 func main() {
 
 	dbfile := flag.String("dbfile", "fivecalls.db", "filename for sqlite db")
-	airtableBase := flag.String("airtable-base", "app6dzsa26hDjI7tp", "base ID for airtable store")
+	airtableBase := flag.String("airtable-base", "appQvgQW7xnaTcUiz", "base ID for airtable store")
 	addr := flag.String("addr", ":8090", "[ip]:port to listen on")
 	airtableKey := os.Getenv("AIRTABLE_API_KEY")
 	civicKey := os.Getenv("CIVIC_API_KEY")
