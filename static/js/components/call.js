@@ -49,10 +49,10 @@ module.exports = (state, prev, send) => {
 
     <h3 class="call__outcomes__header">Enter your call result to get the next call:</h3>
     <div class="call__outcomes btn-group" role="group">
-      <button type="button" class="btn btn-default" onclick=${() => outcome('unavailable')}>Unavailable</button>
-      <button type="button" class="btn btn-default" onclick=${() => outcome('vm')}>Left Voicemail</button>
-      <button type="button" class="btn btn-default" onclick=${() => outcome('contacted')}>Made Contact</button>
-      <button type="button" class="btn btn-default" onclick=${() => outcome()}>Skip</button>
+      <button type="button" class="btn btn-primary" onclick=${() => outcome('unavailable')}>Unavailable</button>
+      <button type="button" class="btn btn-primary" onclick=${() => outcome('vm')}>Left Voicemail</button>
+      <button type="button" class="btn btn-primary" onclick=${() => outcome('contacted')}>Made Contact</button>
+      <button type="button" class="btn btn-primary" onclick=${() => outcome()}>Skip</button>
     </div>
 
     <div class="call__promote">

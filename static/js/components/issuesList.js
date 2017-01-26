@@ -4,8 +4,8 @@ const issuesListItem = require('./issuesListItem.js');
 
 module.exports = (state, prev, send) => {
   return html`
-    <ul class="issues-list" role="navigation">
+    <div class="btn-group-vertical issues-list" role="group">
       ${state.issues.map((issue) => issuesListItem(issue, state, prev, send))}
-    </ul>
+    </div>
   `;
 }

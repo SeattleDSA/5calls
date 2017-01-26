@@ -20,14 +20,14 @@ module.exports = (issue, state, prev, send) => {
   }
 
   return html`
-    <div>
-      <button type="button" class="${classString(state, '')} btn btn-default btn-lg btn-block" onclick=${handleClick} href="#issue/${issue.id}">
-        <p class="${classString(state, '__title')}">${issue.name}</p>
-      </button>
-      <p class="${classString(state, '__summary')}">${issue.contacts.length} call${ issue.contacts.length > 1 ? "s" : "" } to make</p>
-    </div>
+    <button type="button" class="${classString(state, '')} btn btn-danger btn-lg btn-block" onclick=${handleClick} href="#issue/${issue.id}">
+      ${issue.name}
+      <span class="badge">${issue.contacts.length}</span>
+    </button>
   `;
 }
 
+// <p class="${classString(state, '__summary')}">
+// <p class="${classString(state, '__title')}">${issue.name}</p>
     // <li class="${classString(state, '')}" onclick=${handleClick} href="#issue/${issue.id}">
       // <img style="display:${completeDisplay}" src="/img/done.png" width="83" />
