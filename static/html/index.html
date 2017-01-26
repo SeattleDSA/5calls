@@ -44,7 +44,7 @@
     <meta name="msapplication-TileImage" content="/img/fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#0032FF">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://use.fontawesome.com/e87f1bc9b3.js"></script>
 
     <!-- Latest compiled and minified CSS -->
@@ -54,27 +54,28 @@
 <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
  -->
   </head>
-  <body>      
+  <body class="bg-DSA">      
     <div id="root" class="layout container">
-      <div class="row">
-        <h1>DSA Call to Action <small>The revolution starts now.</small></h1>
+      <div class="row header">
+        <h1 class="col-md-12 txt-DSAwhite"><b>Seattle DSA Call to Action</b> <small class="txt-DSAgray">The revolution starts now.</small></h1>
       </div>
-      <div class="row">
+      <div class="row bg-DSAglass">
         <aside role="contentinfo" class="layout__side col-md-4">
           <div class="issues">
             <header class="issues__header" role="banner">
-              <h1 class="issues__title">
-                <a href="/"><img class="issues__logo" src="/img/5calls-logo.png" alt="5 Calls" />5 Calls</a>
-              </h1>
-              <p class="issues__subtitle">
-              </p>
+            	&nbsp;
+            	<a href="http://www.seattledsa.org/"><img class="issues__logo img-responsive" src="img/seattledsa-logo.jpg" alt="Seattle DSA - Call to Action Logo" /></a>
+              	<h1 class="issues__title">
+                	
+              	</h1>
+              	<p class="issues__subtitle">
+
+              	</p>
             </header>
             <ul class="issues-list" role="navigation">
             </ul>
           </div>
-        </aside>
 
-        <main role="main" class="layout__main col-md-8">
           <div class="hypothesis">
             <header class="hypothesis__header">
               <h2 class="hypothesis__title">Make your voice heard</h2>
@@ -88,25 +89,28 @@
             </div>
             </header>
           </div>
+        </aside>
+
+        <main role="main" class="layout__main col-md-8">
+        	&nbsp;
+        	<h1>var_issue</h1>
+        	<h2><b>Why You're Calling:</b></h2>
+          	<p>var_reason</p>
+          <h2><b>Please call:</b></h2>
+          <div class="row">
+          	<div class="col-md-4"><img src="var_contact_img" class="img-responsive" alt="var_contract_img" /></div>
+          	<div class="col-md-8"><h3>var_contact</h3> <h3>var_phone</h3></div>
+          </div>
+          
+          <h2><b>Your Script:</b></h2>
+          <blockquote>var_script</blockquote>
+          <div class="btn-group" role="group" aria-label="Results from Call">
+          <a href="" role="button" class="btn btn-danger">No Answer</a> <a href="" role="button" class="btn btn-primary">Left Voicemail</a> <a href="" role="button" class="btn btn-success">Contact</a> <a href="" role="button" class="btn btn-danger">Skip</a>
+          </div>
+          <p></p>
         </main>
       </div>
     </div>
-
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        <p class="navbar-text">
-          <a href="https://github.com/5calls/5calls">
-            <i class="fa fa-github" aria-hidden="true"></i> Open Source
-          </a>
-        </p>
-        <p class="navbar-text">
-          <a href="https://twitter.com/make5calls">
-            <i class="fa fa-twitter" aria-hidden="true"></i> Updates on Twitter
-          </a>
-        </p>
-      </div>
-    </nav>
-
 
     <script src="/js/app.js"></script>
     <script src="https://cdn.ravenjs.com/3.9.1/raven.min.js"></script>
