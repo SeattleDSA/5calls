@@ -5,7 +5,7 @@ module.exports = (state, prev, send) => {
   return html`
     <div class="hypothesis" onload=${(e) => send('getTotals')}>
       <header class="hypothesis__header">
-        <h2 class="hypothesis__title">Make your voice heard</h2>
+        <h2 class="hypothesis__title"><strong>Make your voice heard</strong></h2>
         <p>Turn your passive participation into active resistance. Facebook likes and Twitter retweets don't create the change you want to see.</p>
         <p><strong>Spend 5 minutes, make 5 calls.</strong></p>
       </header>
@@ -14,12 +14,11 @@ module.exports = (state, prev, send) => {
         <p>Calling is the most effective way to influence your representative. 5 Calls gives you <strong>contacts and scripts</strong> so calling is quick and easy. We use your location to give you your local representatives so <strong>your calls are more impactful</strong>.</p>
         <p>Want to know more? Read about <a href="#about">why calling works</a> or <a href="#about">more about us</a></p>
       </div>
-      <dl class="hypothesis__stats">
-        <li class="hypothesis__stat">
-          <dt class="hypothesis__stat-value">${state.totalCalls.toLocaleString()}</dt>
-          <dd class="hypothesis__stat-dd">calls to date</dd>
-        </li>
-      </dl>
+      <div class="hypothesis__stats">
+        <div class="hypothesis__stat">
+          <span class="hypothesis__stat-value">${state.totalCalls.toLocaleString()}</span> <span class="hypothesis__stat-dd">calls to date</span>
+        </div>
+      </div>
     </div>
   `;
 }

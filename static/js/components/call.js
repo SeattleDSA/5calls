@@ -32,14 +32,14 @@ module.exports = (state, prev, send) => {
   return html`
   <section class="call">
     <header class="call__header">
-      <h2 class="call__title">${issue.name}</h2>
+      <h2 class="call__title"><strong>${issue.name}</strong></h2>
       <p class="call__reason lead">${issue.reason.split('\n').map((line) => scriptLine(line, state, prev, send))}</p>
     </header>
 
     ${contact(currentContact, state, prev, send)}
 
     <div class="call__script">
-      <h3 class="call__script__header">Your script:</h3>
+      <h3 class="call__script__header"><strong>Your script:</strong></h3>
       <div class="call__script__body">
         <blockquote>
         <p>${issue.script.split('\n').map((line) => scriptLine(line, state, prev, send))}</p>
@@ -49,11 +49,13 @@ module.exports = (state, prev, send) => {
 
     <h3 class="call__outcomes__header">Enter your call result to get the next call:</h3>
     <div class="call__outcomes btn-group" role="group">
-      <button type="button" class="btn btn-primary" onclick=${() => outcome('unavailable')}>Unavailable</button>
+      <button type="button" class="btn btn-danger" onclick=${() => outcome('unavailable')}>Unavailable</button>
       <button type="button" class="btn btn-primary" onclick=${() => outcome('vm')}>Left Voicemail</button>
-      <button type="button" class="btn btn-primary" onclick=${() => outcome('contacted')}>Made Contact</button>
-      <button type="button" class="btn btn-primary" onclick=${() => outcome()}>Skip</button>
+      <button type="button" class="btn btn-success" onclick=${() => outcome('contacted')}>Made Contact</button>
+      <button type="button" class="btn btn-danger" onclick=${() => outcome()}>Skip</button>
     </div>
+
+    <hr />
 
     <div class="call__promote">
       <p>${contactsLeftText} for this issue • <a target="_blank" href="https://twitter.com/intent/tweet?text=Make%205%20calls%20today%20to%20change%20your%20government%20http%3A%2F%2Fbit.ly%2F2iJb5nH&source=webclient&via=make5calls"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet this issue</a> • <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/2iJb5nH"><i class="fa fa-facebook" aria-hidden="true"></i> Share this issue</a></p>
