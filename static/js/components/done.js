@@ -2,7 +2,7 @@ const html = require('choo/html');
 
 module.exports = (state, prev, send) => {
   return html`
-    <main role="main" class="layout__main">
+    <main role="main" class="layout__main col-md-8">
     <section class="call">
       <div class="call_complete">
         <h2 class="call__complete__title">Great work!</h2>
