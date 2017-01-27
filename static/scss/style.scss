@@ -67,3 +67,25 @@ body { padding-bottom: 70px;
 .call hr {
 	border-top: 1px solid #231F20;
 }
+
+.btn-group-vertical .btn {
+	white-space: normal;
+}
+
+@media only screen and (min-width : 320px) {
+	.layout__main {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width : 480px) {
+	.layout__main {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width : 768px) {
+	.layout__main {
+		font-size: 1.5rem;
+	}
+}

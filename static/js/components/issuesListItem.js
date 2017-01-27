@@ -20,7 +20,7 @@ module.exports = (issue, state, prev, send) => {
   }
 
   return html`
-    <button type="button" class="${classString(state, '')} btn btn-danger btn-lg btn-block" onclick=${handleClick} href="#issue/${issue.id}">
+    <button type="button" class="${classString(state, '')} btn btn-danger btn-lg" onclick=${handleClick} href="#issue/${issue.id}">
       ${issue.name}
       <span class="badge">${issue.contacts.length}</span>
     </button>

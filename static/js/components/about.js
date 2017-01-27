@@ -2,9 +2,9 @@ const html = require('choo/html');
 
 module.exports = (state, prev, send) => {
   return html`
-    <main role="main" class="layout__main">
+    <main role="main" class="layout__main col-md-8">
     <section class="about">
-      <h2 class="about__title">About 5 Calls</h2>
+      <h2 class="about__title"><strong>About 5 Calls</strong></h2>
      
         <p>Calling members of congress is the most effective way to have your voice heard. Call results are tallied by staffers and given to your representatives, informing them on how their constituents feel about current issues. <strong>The sooner you reach out to your representatives about an issue, the more likely it is that your voice will influence their position.</strong></p> 
         <p>Here are some resources on why calling is important:</p>
@@ -17,15 +17,15 @@ module.exports = (state, prev, send) => {
         <p>We do the research for each issue, determining out which representatives are most influential for which topic, collecting phone numbers for those offices and writing scripts that clearly articulate a progressive position. You just have to call.</p>
         <p>If there's a current or upcoming topic that isn't covered that should be, please <a href="mailto:make5calls@gmail.com">reach out</a>.</p>
 
-        <h3 class="about__subtitle">Calling Tips</h3>
+        <h3 class="about__subtitle"><strong>Calling Tips</strong></h3>
         <p>Calls should take a minute or less. You'll be speaking to a staffer, so make your point clearly so they can tally your opinion correctly. The provided scripts are useful but you can add your own words.</p>
         <p>Be respectful. The staffers that pick up the phone aren't looking to challenge you and you should treat them with the same respect you expect from them, regardless of which party they work for.</p>
 
-        <h3 class="about__subtitle">Who we are</h3>
+        <h3 class="about__subtitle"><strong>Who we are</strong></h3>
         <p>We’re a group of like-minded volunteers who want to make advocacy accessible. We hope 5 Calls will make it effortless for regular people to have a voice when it’s needed most.</p>
         <p>5 Calls is brought to you by <a href="https://twitter.com/nickoneill">@nickoneill</a>, <a href="https://twitter.com/syntheticmethod">@syntheticmethod</a>, <a href="https://twitter.com/monteiro">@monteiro</a>, <a href="https://twitter.com/stewartsc">@stewartsc</a>, <a href="https://twitter.com/liamdanger">@liamdanger</a>, <a href="https://twitter.com/capndesign">@capndesign</a>, <a href="https://twitter.com/gotwarlost">@gotwarlost</a> and more supporters.</a>
 
-        <h3 class="about__subtitle">Join us</h3>
+        <h3 class="about__subtitle"><strong>Join us</strong></h3>
         <p>This project is <a href="https://github.com/5calls/5calls">open source</a> and volunteer made. If you’d like to join us in developing useful tools for citizens, please get in touch via <a href="https://twitter.com/make5calls">Twitter</a> or <a href="mailto:make5calls@gmail.com">email</a>.</p>
 
     </section>
