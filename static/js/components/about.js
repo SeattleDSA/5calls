@@ -21,6 +21,7 @@ module.exports = (state, prev, send) => {
         <p>Calls should take a minute or less. You'll be speaking to a staffer, so make your point clearly so they can tally your opinion correctly. The provided scripts are useful but you can add your own words.</p>
         <p>Be respectful. The staffers that pick up the phone aren't looking to challenge you and you should treat them with the same respect you expect from them, regardless of which party they work for.</p>
 
+        <h3><strong>Join Democratic Socialists of America</strong></h3>
         <p>Democratic Socialists believe that both the economy and society should be run democratically to meet human needs, not to make profits for a few. We are a political and activist organization, not a party; through campus and community-based chapters DSA members use a variety of tactics, from legislative to direct action, to fight for reforms that empower working people.</p>
 
         <h3 class="about__subtitle"><strong>Who developed this software?</strong></h3>
