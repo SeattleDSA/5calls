@@ -6,7 +6,7 @@ const queryString = require('query-string');
 const store = require('./utils/localstorage.js');
 
 const app = choo();
-const appURL = 'http://calls.seattledsa.org:8090';
+const appURL = 'https://calls.seattledsa.org/api/';
 const debug = false;
 // const appURL = 'http://localhost:8090';
 
