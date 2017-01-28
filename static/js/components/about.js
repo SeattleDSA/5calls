@@ -21,11 +21,12 @@ module.exports = (state, prev, send) => {
         <p>Calls should take a minute or less. You'll be speaking to a staffer, so make your point clearly so they can tally your opinion correctly. The provided scripts are useful but you can add your own words.</p>
         <p>Be respectful. The staffers that pick up the phone aren't looking to challenge you and you should treat them with the same respect you expect from them, regardless of which party they work for.</p>
 
-        <h3 class="about__subtitle"><strong>Who we are</strong></h3>
-        <p>We’re a group of like-minded volunteers who want to make advocacy accessible. We hope 5 Calls will make it effortless for regular people to have a voice when it’s needed most.</p>
-        <p>5 Calls is brought to you by <a href="https://twitter.com/nickoneill">@nickoneill</a>, <a href="https://twitter.com/syntheticmethod">@syntheticmethod</a>, <a href="https://twitter.com/monteiro">@monteiro</a>, <a href="https://twitter.com/stewartsc">@stewartsc</a>, <a href="https://twitter.com/liamdanger">@liamdanger</a>, <a href="https://twitter.com/capndesign">@capndesign</a>, <a href="https://twitter.com/gotwarlost">@gotwarlost</a> and more supporters.</a>
+        <p>Democratic Socialists believe that both the economy and society should be run democratically to meet human needs, not to make profits for a few. We are a political and activist organization, not a party; through campus and community-based chapters DSA members use a variety of tactics, from legislative to direct action, to fight for reforms that empower working people.</p>
 
-        <h3 class="about__subtitle"><strong>Join us</strong></h3>
+        <h3 class="about__subtitle"><strong>Who developed this software?</strong></h3>
+        <p>5 Calls, the software powering this site, was developed by a group of like-minded volunteers who want to make advocacy accessible. They hope 5 Calls will make it effortless for regular people to have a voice when it’s needed most.</p>
+        <p>5 Calls is brought to you by <a href="https://twitter.com/nickoneill">@nickoneill</a>, <a href="https://twitter.com/syntheticmethod">@syntheticmethod</a>, <a href="https://twitter.com/monteiro">@monteiro</a>, <a href="https://twitter.com/stewartsc">@stewartsc</a>, <a href="https://twitter.com/liamdanger">@liamdanger</a>, <a href="https://twitter.com/capndesign">@capndesign</a>, <a href="https://twitter.com/gotwarlost">@gotwarlost</a> and more supporters.</a></p>
+
         <p>This project is <a href="https://github.com/5calls/5calls">open source</a> and volunteer made. If you’d like to join us in developing useful tools for citizens, please get in touch via <a href="https://twitter.com/make5calls">Twitter</a> or <a href="mailto:make5calls@gmail.com">email</a>.</p>
 
     </section>
