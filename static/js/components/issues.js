@@ -17,7 +17,6 @@ module.exports = (state, prev, send) => {
       ${issuesHeader(state, prev, send)}
       ${issuesList(state, prev, send)}
       ${debugText(state.debug)}
-      
     </div>
   `;
 }

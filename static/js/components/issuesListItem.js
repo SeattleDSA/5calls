@@ -1,7 +1,6 @@
 const html = require('choo/html');
 
 module.exports = (issue, state, prev, send) => {
-  const completeDisplay =  state.completedIssues.indexOf(issue.id) == -1 ? "none" : "block";
 
   function classString(state, baseAddition) {
     const BASE_CLASS = 'issues-list__item' + baseAddition;
@@ -12,22 +11,22 @@ module.exports = (issue, state, prev, send) => {
 
     state.location.params.issueid === issue.id && classes.push(ACTIVE_CLASS);
 
+    if (state.completedIssues.indexOf(issue.id) != -1) {
+      classes.push(COMPLETE_CLASS);
+    }
+
     return classes.join(' ');
   }
 
   function handleClick(e) {
-    location.hash = "issue/"+issue.id
+    send("activateIssue", { id: issue.id });
   }
 
   return html`
-    <button type="button" class="${classString(state, '')} btn btn-danger btn-lg" onclick=${handleClick} href="#issue/${issue.id}">
-      ${issue.name}
-      <span class="badge">${issue.contacts.length}</span>
-    </button>
+    <li class="${classString(state, '')}" onclick=${handleClick} href="#issue/${issue.id}">
+      <p class="${classString(state, '__status')}"></p>
+      <p class="${classString(state, '__title')}">${issue.name}</p>
+      <p class="${classString(state, '__summary')}">${issue.contacts.length} call${ issue.contacts.length > 1 ? "s" : "" } to make</p>
+    </li>
   `;
 }
-
-// <p class="${classString(state, '__summary')}">
-// <p class="${classString(state, '__title')}">${issue.name}</p>
-    // <li class="${classString(state, '')}" onclick=${handleClick} href="#issue/${issue.id}">
-      // <img style="display:${completeDisplay}" src="/img/done.png" width="83" />

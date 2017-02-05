@@ -6,12 +6,21 @@ module.exports = (state, prev, send) => {
   return html`
     <header class="${classString(state)}" role="banner">
       <h1 class="issues__title">
-        <a href="http://www.seattledsa.org/"><img src="/img/seattledsa-logo.jpg" class="img-responsive" /></a>
-      </h1>      
-      <a href="/" class="btn btn-default btn-lg btn-block" onclick=${() => send('home')}><strong>View Active Issues</strong></a>
-      ${issuesLocation(state, prev, send)} 
+        <a href="/" onclick=${() => send('home')}><img class="issues__title__logo" src="/img/dsa-logo.png" alt="Seattle Democratic Socialists of America" /></a>
+        Seattle Democratic Socialists of America
+      </h1>
+      ${issuesLocation(state, prev, send)}
+      ${issueExplain(state)}
     </header>
   `;
+
+  function issueExplain(state) {
+    if (state.issues.length > 0) {
+      return html`<h2>What's important to you?</h2>`
+    } else {
+      return html``
+    }
+  }
 
   function classString(state) {
     const BASE_CLASS = 'issues__header';
