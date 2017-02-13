@@ -83,7 +83,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest(DEST.js));
 });
 
-// Watch and js script files, and run 'srcipts' task every time they change.
+// Watch all js script files, and run 'scripts' task every time they change.
 gulp.task('scripts:watch', function() {
   gulp.watch(`${SRC.js}/**/*.js`, ['scripts']);
 });
